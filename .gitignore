@@ -1,0 +1,13 @@
+*.aux
+*.fls
+*.lof
+*.lot
+*.synctex.gz
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+.idea/
+*.qti~
+.~lock*
+.ipynb_checkpoints/
