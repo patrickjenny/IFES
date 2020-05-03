@@ -1,6 +1,6 @@
 \LoadClass[12pt,a4paper,oneside]{scrartcl}
 \usepackage[utf8]{inputenc}
-%\usepackage[ngerman]{babel}
+\usepackage[english]{babel}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage[T1]{fontenc}
