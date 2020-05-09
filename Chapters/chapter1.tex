@@ -95,3 +95,26 @@ $$P2: \quad z = x -\frac{1}{2}y$$
 \textbf{Linear Density [110]}
 
 $$\lambda = \frac{2 \cdot m_{Ca}}{\sqrt{2}a}$$
+
+\textbf{Potential Energy}
+
+The potential energy between to adjacent ions can be represented by
+
+\begin{equation}
+	E(r) = - \frac{A}{r} + \frac{B}{r^n}
+	\label{eq:Pot_Energy}
+\end{equation}
+
+To calculate the bonding energy $E_0 = E(r_0)$, which is a minimum of the function $E(r)$,
+the derivative has to equals zero.
+The negative derivative of the bonding energy equals the interatomic force.
+
+$$F(r) = - \frac{\partial E(r)}{\partial r} = 0$$
+
+$$-\frac{A}{r^2} + \frac{nB}{r^{n+1}} = 0$$
+$$\Rightarrow r_0 = \left( \frac{A}{nB} \right)^{\frac{1}{n-1}}$$
+
+By inserting the result for $r_0$ into \autoref{eq:Pot_Energy}, the bonding energy $E_0$ in terms of $A$, $B$ and $n$ results as:
+
+$$E_0 = E(r_0) = - \frac{A}{\left( \frac{A}{nB} \right)^{\frac{1}{n-1}}} + 
+				\frac{B}{\left( \frac{A}{nB} \right)^{\frac{n}{n-1}}}$$
