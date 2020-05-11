@@ -31,7 +31,8 @@ $$\vec{u} = \frac{a}{2} \left(\begin{matrix}1\\1\\0\\\end{matrix}\right) \qquad
   \vec{v} = \frac{a}{2} \left(\begin{matrix}0\\1\\1\\\end{matrix}\right) \qquad
   \vec{w} = \frac{a}{2} \left(\begin{matrix}1\\0\\1\\\end{matrix}\right)$$
 
-The volume can be calculated with the following formula
+Whith these 3 base vectors a parallelepiped is given which is a primitive cell.
+The volume of the primitive cell can be calculated with the following formula
 
 $$V_{PC} = \vert (\vec{u} \times \vec{v})  \cdot \vec{w} \vert$$
 
@@ -48,12 +49,28 @@ The volume of the unit cell can be calculated as:
 $$V_{UC} = a^3$$
 
 
-The unit cell containts 4 whole atoms 
+The unit cell containts 4 whole atoms.
+One eighth of a atomic sphere at each corner (8) and one half at 
+each cube face (6).
 
-The relationship between the parameter $a$ and the radius of the Radius of the atomic sphere is given as:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{Graphics/Chapter1/r_a_relation}
+	\caption{Relation between the atomic radius and the parameter a in a FFC}
+	\label{fig:r_a_relation}
+\end{figure}
+
+ As \autoref{fig:r_a_relation} shows the relationship between the parameter $a$ and the radius of the atomic sphere is given as:
 $$r = \frac{\sqrt{2}}{4} a $$
 
-$$APF = \frac{\pi}{3 \cdot \sqrt{2}} \approx 74\%$$
+And further the volume of the sphere
+
+$$V_{Atom} = \frac{4}{3} \pi r^3 = \frac{a^3 \pi}{\sqrt{2^5}\cdot 3}$$
+
+So the Atomic Packaging Factor $APF$ can be calculated as ratio between the
+volume consumed by the atoms to the whole volume.
+
+$$APF = \frac{4 \cdot V_{Atom} }{V_{UC}} = \frac{\pi}{3 \cdot \sqrt{2}} \approx 74\%$$
 
 
 \textbf{Density}
@@ -98,11 +115,16 @@ $$P2: \quad z = x -\frac{1}{2}y$$
 	\centering
 	\includegraphics[width=0.5\linewidth]{Graphics/Chapter1/Lin_Den}
 	\caption{Linear Density of FCC in [110] Direction}
-	\label{}
+	\label{Lin_Den}
 \end{figure}
 
+\autoref{Lin_Den} shows the [110] direction in a FCC lattice.
+As you can see the [110] direction includes 2 atoms inside a 
+length of $\sqrt{2}a$.
 
-$$\lambda = \frac{2 \cdot m_{Ca}}{\sqrt{2}a}$$
+Therefore  (with $a = 5.56 \, \mathring{A}$)
+
+$$\lambda = \frac{2 \, Atoms}{\sqrt{2}a} = \frac{\sqrt{2}}{5.56} \frac{Atoms}{\mathring{A}}$$
 
 \textbf{Potential Energy}
 
@@ -112,6 +134,7 @@ The potential energy between to adjacent ions can be represented by
 	E(r) = - \frac{A}{r} + \frac{B}{r^n}
 	\label{eq:Pot_Energy}
 \end{equation}
+
 
 To calculate the bonding energy $E_0 = E(r_0)$, which is a minimum of the function $E(r)$,
 the derivative has to equals zero.
@@ -126,3 +149,4 @@ By inserting the result for $r_0$ into \autoref{eq:Pot_Energy}, the bonding ener
 
 $$E_0 = E(r_0) = - \frac{A}{\left( \frac{A}{nB} \right)^{\frac{1}{n-1}}} + 
 				\frac{B}{\left( \frac{A}{nB} \right)^{\frac{n}{n-1}}}$$
+

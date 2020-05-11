@@ -1,11 +1,87 @@
 \section{Chapter 3}
-asdf
+
+\textbf{Density of States (1D)}
+
+We start with the 1-D wave equation:
+$$\frac{\partial^2 u}{\partial x^2} - \frac{\rho}{Y} \frac{\partial u}{\partial t} = 0$$
+
+Which delivers a solution in the way of:\\
+(The time depence is not needed for calculatiing the density of states)
+\begin{equation}
+    u = Ae^{iqx}
+    \label{eq:sol_1d_wave}
+\end{equation}
+
+By using the boundary conditions:
+$$u(x=0) = u(x=L)$$
+
+We get:
+$$e^{iqL} = 1$$
+
+Due to Eulers-Equation we get for $q$
+$$q = n \frac{2\pi}{L}$$
+
 
 \begin{equation}
-    g(\omega) = \frac{L}{\pi} \frac{1}{v_s} \qquad \omega = k \cdot v_s 
+    g(\omega) = \frac{L}{\pi} \frac{1}{\frac{d\omega}{d q}}
+\end{equation}
+
+\begin{equation}
+    g(\omega) = \frac{L}{\pi} \frac{1}{v_s}
+\end{equation}
+
+\textbf{Density of States (3D)}
+
+Starting with the solution for the wave equation as same as in the 1-D case
+(\autoref{eq:sol_1d_wave}) we get:
+
+\begin{equation}
+    u = Ae^{i(q_x x + q_y y + q_z z)}
+\end{equation}
+
+By applying the same boundary conditions as in the 1-D case we get:
+\begin{equation}
+    u = e^{i(q_x x + q_y y + q_z z)} = 1
+\end{equation}
+
+$$(q_x, \, q_y,\, q_z) = (n \frac{2\pi}{L}, \, m \frac{2\pi}{L}, \, l \frac{2\pi}{L})$$
+
+\begin{equation}
+    g(\omega) = \frac{V}{2\pi^2} \frac{\omega^2}{v_s^3}
+    \label{eq:g_ome_3d_1}
+\end{equation}
+
+As there are three different modes associated with the same value for $q$.
+(one longitudinal and 2 transversal modes). \autoref{eq:g_ome_3d_1} has to be
+multiplied by a factor of three to get the correct result.
+
+\begin{equation}
+    g(\omega) = \frac{3V}{2\pi^2} \frac{\omega^2}{v_s^3}
 \end{equation}
 
 
+\textbf{Debye Frequency}
+
+\textbf{Monoatomic 1D chain}
+
+We are going to consider elastic vibrations of the atomic network in classic
+terms. We assume that:
+\begin{enumerate}
+\item The average equilibrium position of each atom is placed at the Bravais 
+        network node.
+\item Atomic deflections from equilibrium positions are small compared to the
+        distances between atoms. This assumption leads to harmonic 
+        approximation allowing for simplification accounts
+\item We will use the Born-Openhaimer adiabatic approximation: the velocities
+        of electrons are on the order of $10^8 \mathrm{\frac{cm}{s}}$, while 
+        the velocities of nuclei in atoms on the order of at most $10^5 \mathrm
+        {\frac{cm}{s}}$. When considering the motion of whole atoms or ions can 
+        therefore be assumed that electrons are always in their own
+        ground state for a specific atom position.
+\end{enumerate}
+If the waves propagate in a crystal with a regular structure the entire network planes move in phase, in direction or in parallel or perpendicular to the direction of the wave. After considering every of those statements the frequency of normal vibration modes
+$\omega(k)$ of modes with wave vector $k$ (dispersion relationship) can be expressed by:
 \begin{equation}
-    g(\omega) = \frac{V}{\pi} \frac{1}{v_s} \qquad \omega = k \cdot v_s 
+\omega^2 = 4K \sin^2\bigg(\frac{ka}{2}\bigg)  
 \end{equation}
+
