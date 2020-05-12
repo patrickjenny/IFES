@@ -62,6 +62,23 @@ multiplied by a factor of three to get the correct result.
 
 \textbf{Debye Frequency}
 
+\begin{equation}
+    \int_0^{\omega_D} g(\omega) \, d\omega = 3N_A
+    \label{eq:debye_frequency_int}
+\end{equation}
+
+With inserting the \autoref{eq:g_ome_3d_1} into equation 
+\autoref{eq:debye_frequency_int} the integral can be solved and 
+a expression for the Debye frequency $w_D$ is obtained.
+
+$$\int_0^{\omega_D} \frac{3V}{2\pi^2} \frac{\omega^2}{v_s^3} \, d\omega = 
+    \frac{3V}{2\pi^2} \frac{1}{v_s^3} \left[\omega\right]_0^{\omega_D} =
+    \frac{V}{2\pi^2} \frac{\omega_D^3}{v_s^3}
+$$
+
+$$ \frac{V}{2\pi^2} \frac{\omega_D^3}{v_s^3} = 3N_A \qquad \Rightarrow
+    w_D = (6\pi^2 n)^{\frac{1}{3}} v_s \textrm{ with } n=\frac{N_a}{V}$$
+
 \textbf{Monoatomic 1D chain}
 
 We are going to consider elastic vibrations of the atomic network in classic
@@ -82,6 +99,12 @@ terms. We assume that:
 If the waves propagate in a crystal with a regular structure the entire network planes move in phase, in direction or in parallel or perpendicular to the direction of the wave. After considering every of those statements the frequency of normal vibration modes
 $\omega(k)$ of modes with wave vector $k$ (dispersion relationship) can be expressed by:
 \begin{equation}
-\omega^2 = 4K \sin^2\bigg(\frac{ka}{2}\bigg)  
+    m\omega^2 = 4K \sin^2\bigg(\frac{ka}{2}\bigg)  
 \end{equation}
 
+$$v_G = \frac{\partial \omega}{\partial k} = 
+     \sqrt{\frac{K}{m}} a \cos\left(\frac{ka}{2} \right)$$
+
+$$v_G(k=0) = \sqrt{\frac{K}{m}} a$$
+
+$$v_G\left(k=-\frac{\pi}{a}\right)= v_G\left(k=\frac{\pi}{a}\right) = 0$$
