@@ -8,7 +8,7 @@ $$\frac{\partial^2 u}{\partial x^2} - \frac{\rho}{Y} \frac{\partial u}{\partial 
 Which delivers a solution in the way of:\\
 (The time depence is not needed for calculatiing the density of states)
 \begin{equation}
-    u = Ae^{iqx}
+    u = Ae^{ikx}
     \label{eq:sol_1d_wave}
 \end{equation}
 
@@ -16,19 +16,49 @@ By using the boundary conditions:
 $$u(x=0) = u(x=L)$$
 
 We get:
-$$e^{iqL} = 1$$
+$$e^{ikL} = 1$$
 
-Due to Eulers-Equation we get for $q$
-$$q = n \frac{2\pi}{L}$$
+Due to Eulers-Equation we get for $k$
+$$k = n \frac{2\pi}{L}$$
 
+If you choose integer values for $n$ and plot them along a $k$-axis, they form
+a one-dimensional mesh with a constants spacing $(2\pi/L)$ between the poins.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Graphics/Chapter3/allowed_values_k_1D}
+	\caption{Allowed values of $k$}
+	\label{}
+\end{figure}
+
+As we can see if $L$ becomes large we get quasi-continous points for $k$. So the 
+number of modes (points) in an interval $dk$ in $k$-space equals:
+
+$$\dfrac{L}{2\pi} dk$$
+
+Using the dispersion relation we can find the number of modes in a frequency
+range $d\omega$, which lies within $(\omega, \omega + d\omega)$.
+This number is given as $(g\omega)d\omega$, with
+$g(w)$ defined as the density of states.
+
+$$g(\omega) d\omega =\dfrac{L}{2\pi} dk$$
+
+By solving for $g(\omega)$ and multipling with a factor of two.
+(Due to the fact that we have to include the modes lying the negative k-region)\\
+We get:
 
 \begin{equation}
-    g(\omega) = \frac{L}{\pi} \frac{1}{\frac{d\omega}{d q}}
+    g(\omega) = \frac{L}{\pi} \frac{1}{\frac{d\omega}{d k}}
 \end{equation}
+
+By assuming that the dispersion in linear $(\omega = v_sk)$ 
+the density of states is
 
 \begin{equation}
     g(\omega) = \frac{L}{\pi} \frac{1}{v_s}
 \end{equation}
+
+which is independet of $\omega$
 
 \textbf{Density of States (3D)}
 
@@ -36,15 +66,26 @@ Starting with the solution for the wave equation as same as in the 1-D case
 (\autoref{eq:sol_1d_wave}) we get:
 
 \begin{equation}
-    u = Ae^{i(q_x x + q_y y + q_z z)}
+    u = Ae^{i(k_x x + k_y y + k_z z)}
 \end{equation}
 
 By applying the same boundary conditions as in the 1-D case we get:
-\begin{equation}
-    u = e^{i(q_x x + q_y y + q_z z)} = 1
-\end{equation}
 
-$$(q_x, \, q_y,\, q_z) = (n \frac{2\pi}{L}, \, m \frac{2\pi}{L}, \, l \frac{2\pi}{L})$$
+$$u = e^{i(k_x x + k_y y + k_z z)} = 1$$
+
+$$(k_x, \, k_y,\, k_z) = (n \frac{2\pi}{L}, \, m \frac{2\pi}{L}, \, l \frac{2\pi}{L})$$
+
+Each point in this $k$-space has a volume of $(2\pi/L)^3$. The number of
+modes that lie within a spherical shell with thikness $dk$ with a radius k 
+and a volume $4/3\pi k^3$, is given by:
+
+$$\frac{d}{dk}{(\frac{L}{2\pi})}^3\frac{4}{3}\pi k^3 = {(\frac{L}{2\pi})}^3 4\pi k^2 dk$$
+
+And so with $L^3 = V$:
+
+$$ g(\omega) d \omega =  \frac{V}{2\pi^2} k^2 dk \quad \Rightarrow \quad g(\omega) = \frac{V}{2\pi^2} k^2 \frac{dk}{d \omega} $$
+
+By applying the linear dispersion relation, we get:
 
 \begin{equation}
     g(\omega) = \frac{V}{2\pi^2} \frac{\omega^2}{v_s^3}
@@ -61,6 +102,26 @@ multiplied by a factor of three to get the correct result.
 
 
 \textbf{Debye Frequency}
+
+In the Debye model the vibration frequency of the lattice covers
+a wide rang of values.
+
+The total energy of the lattice is calculated by:
+
+\begin{equation}
+    E = \int \overline{\epsilon}(\omega) g(\omega) \, d\omega
+    \label{eq:debye_energy}
+\end{equation}
+
+$g(\omega) \quad ... \quad \textrm{density of states}$\\
+$\overline{\epsilon}(\omega) \quad ... \quad \textrm{energy of each mode}$
+
+For various reasons a cutoff frequency is needed for example to not get
+infinit energys in \autoref{eq:debye_energy}.
+
+The upper cutoff frequency was defined, by requiring that the total number of 
+modes included must be equal to the number of degrees of freedom for the entire
+solid.
 
 \begin{equation}
     \int_0^{\omega_D} g(\omega) \, d\omega = 3N_A
