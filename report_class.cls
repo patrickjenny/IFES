@@ -48,7 +48,8 @@
 \pagestyle{scrheadings}
 \clearscrheadfoot
 \setheadsepline{0.4pt}
-\cfoot[\pagemark \text{ / } \pageref{LastPage}]{\pagemark\  \text{ / } \pageref{LastPage}}
+%\cfoot[\pagemark \text{ / } \pageref{LastPage}]{\pagemark\  \text{ / } \pageref{LastPage}}
+\cfoot[\pagemark]{\pagemark}
 
 \usepackage{titling}
 \ihead{\theauthor}

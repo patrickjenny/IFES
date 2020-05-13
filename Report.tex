@@ -12,23 +12,35 @@
 	\tableofcontents
 	\newpage
 	
-	\include{Chapters/abstract}
+	\input{Chapters/abstract}
 	\newpage
 
 	\clearpage
 	\pagenumbering{arabic}
 	
-	%------1-CHAPTER------%
-	\include{Chapters/chapter1}
+	\section{Introduction}
+	\input{Chapters/introduction}
+
+	\section{Results}
+		%------1-CHAPTER------%
+		\input{Chapters/chapter1}
+		\newpage
+
+		%------2-CHAPTER------%
+		\input{Chapters/chapter2}
+		\newpage
+
+		%------3-CHAPTER------%
+		\input{Chapters/chapter3}
+		\newpage
+
+	\section{Conclusion}
+	\input{Chapters/conclusion}
 	\newpage
 
-	%------2-CHAPTER------%
-	\include{Chapters/chapter2}
+	\include{Chapters/references}
 	\newpage
 
-	%------3-CHAPTER------%
-	\include{Chapters/chapter3}
-	\newpage
 
 	\listoftables
 	\listoffigures
