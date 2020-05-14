@@ -2,10 +2,26 @@
 
 \subsubsection*{Geometric Structure Factor}
 
+The structure factor gives the amplitude of a scattered wave arising
+from the atoms with a single primitive cell. 
+\begin{equation}
+\mathrm{\Phi_k} = \sum_{j} f_j(\mathrm{K)}e^{i\mathrm{K \cdot d}}
+\end{equation}
+For crystals composed of only one type of atom, it’s common to split
+the structure factor into two parts:
+\begin{equation}
+\mathrm{\Phi_k} = f_j\mathrm(K)S_{\mathrm{K}}
+\end{equation}
+,where $f_j$ is atomic form factor and $S_\mathrm{K}$ is geometric structure factor. Now let's focus on the second one.
+\begin{equation}
+S_\mathrm{K} = \sum_{j = 1}^{n} e^{i \mathrm{Kd}}
+\end{equation}
+
 For a perfect crystal the lattice gives the reciprocal lattice, which determines the positions (angles) of diffracted beams, and the basis gives the structure factor $F_{hkl}$ which determines the amplitude and phase of the diffracted beams:
 \begin{equation}
 F_{hkl} = \sum_{j = 1}^{N} f_j \mathrm{e}^{[-2\pi i(hx_j + ky_j + lz_j)]}
 \end{equation}
+
 The FCC lattice is a Bravais lattice, and its Fourier transform is a body-centered cubic lattice. However to obtain $F_{hkl}$ without this shortcut, consider an FCC crystal with one atom at each lattice point as a primitive or simple cubic with a basis of 4 atoms, at the origin $ x_j, y_j, z_j = (0, 0, 0)$ and at the three adjacent face centers $ x_j, y_j, z_j = \Big(\frac{1}{2}, \frac{1}{2} , 0\Big), \Big(0, \frac{1}{2} , \frac{1}{2}\Big)\ \mathrm{and}\  \Big(\frac{1}{2} , 0 , \frac{1}{2}\Big) $
 
 $$
