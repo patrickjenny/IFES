@@ -172,6 +172,15 @@ $\omega(k)$ of modes with wave vector $k$ (dispersion relationship) can be expre
     m\omega^2 = 4K \sin^2\bigg(\frac{ka}{2}\bigg)  
 \end{equation}
 
+So $\omega$ is (knwon as the dispersion relationship):
+
+\begin{equation}
+    \omega = \sqrt{\frac{4K}{m}}\cdot \vert \sin \left(\frac{ka}{2} \right) \vert
+    \label{eq:disp_relation} 
+\end{equation}
+
+The group velocity is defined as the partial derivative according to k.
+
 $$v_G = \frac{\partial \omega}{\partial k} = 
      \sqrt{\frac{K}{m}} a \cos\left(\frac{ka}{2} \right)$$
 
@@ -180,4 +189,48 @@ $$v_G(k=0) = \sqrt{\frac{K}{m}} a$$
 $$v_G\left(k=-\frac{\pi}{a}\right)= v_G\left(k=\frac{\pi}{a}\right) = 0$$
 
 The group velocities on the edge of the 1 Brillouin zone are zero, which means that we have a standing wave.
+
+\subsubsection*{Disperision Relationship for Calcium}
+
+In \autoref{chap1} we calculated the linear density $\lambda$ for Calcium in the [110]
+direction as \autoref{fig:Lin_Den} shows the [110] direction is the 
+direction with the lowest distance between the atoms.
+
+Therfore the parameter $a$ in \autoref{eq:disp_relation} is given as the
+inverse of the linear density $\lambda$.
+
+
+Another helpfull relationship is the following:
+
+\begin{equation}
+    K = aY = \frac{Y}{\lambda}
+\end{equation}
+$Y  \quad ... \quad \textrm{Young's modulus}$
+
+Elementary Solid State Physics \cite{elementary_SSP}, p. 91
+
+The Youngs's modulus for calcium can be found in different literature  \cite{web_elem_calcium} and is found to be:
+
+$$Y_{Ca} = 20 GPa$$
+
+So for Calcium the dispersion relationship results in 
+
+\begin{equation}
+    \omega(k) = \sqrt{\frac{4 Y_{Ca}}{m_{Ca} \lambda}} \cdot \vert \sin \left(\frac{k}{2\lambda} \right) \vert
+\end{equation}
+with:
+\begin{addmargin}[4em]{1em}
+    $Y_{Ca} = 20 GPa$\\
+    $m_{Ca} = 40.078 \, u$\\
+    $\lambda = \frac{\sqrt{2}}{5.56} \frac{1}{\mathring{A}}$
+\end{addmargin}
+
+
+The resulting graph is shown in \autoref{fig:disp_relat_calcium}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Graphics/Chapter3/disp_relat_calcium}
+	\caption{Disperision Realtion for Calcium}
+	\label{fig:disp_relat_calcium}
+\end{figure}
 
