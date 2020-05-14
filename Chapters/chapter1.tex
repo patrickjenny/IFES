@@ -1,36 +1,49 @@
 \subsection{Chapter 1}
 
-Calcium, as can be seen in the following table, has a
-FCC structure.
+First of all we need to identify in which structure calcium crystallizes.
+As it can be seen in \autoref{tab:StructuresAndCellDimension_Table1_2_Omar},
+it crystallizes in a FCC-structure.
 
-\begin{figure}[H]
+\begin{table}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Graphics/Chapter1/StructuresAndCellDimension_Table1_2_Omar}
-	\caption{}
-	\label{}
-\end{figure}
+	\caption{Structures and Cell Dimensions of some Elements and Compounds\\
+	Elementary Solid State Physics \cite{elementary_SSP}, p. 18}
+	\includegraphics[width=0.5\linewidth]{Graphics/Chapter1/StructuresAndCellDimension_Table1_2_Omar}
+	\label{tab:StructuresAndCellDimension_Table1_2_Omar}
+\end{table}
 
+FCC stands for \textit{Face-centered cubic}, which means 
+the Calcium crystal is built up uf cubes with atoms at each
+corner and an atom in the middle of each of the six cube planes.
+(As shown in \autoref{fig:face-centered_cubic_lattice})
 
-\textbf{Unit Cell}
-
+\subsubsection*{Unit Cell}
 The convential Unit Cell of a FCC lattice looks as follows:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{Graphics/Chapter1/face-centered_cubic_lattice.png}
 	\caption{FCC-Lattice}
-	\label{}
+	\label{fig:face-centered_cubic_lattice}
 \end{figure}
 
-\textbf{Primitive Vectors}
+\subsubsection*{Primitive Vectors}
+With the primitive vectors each point in a lattice can be represented
+by a linear combination of the three primitive vectors:
 
-The three primitive vectors are
+$$\mathbf{R} = n_1 \vec{u} + n_2 \vec{v} + n_3 \vec{w}$$
+
+It may be said, that the lattice is invariant under the group of all 
+translations expressed by $\mathbf{R}$.
+
+The three primitive vectors for the fcc lattice are shown in 
+\autoref{fig:prim_vec} and specified below.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Graphics/Chapter1/prim_vec}
 	\caption{Primitive Vectors in a FCC-Lattice}
-	\label{}
+	\label{fig:prim_vec}
 \end{figure}
 
 $$\vec{u} = \frac{a}{2} \left(\begin{matrix}1\\1\\0\\\end{matrix}\right) \qquad
@@ -45,7 +58,7 @@ $$V_{PC} = \vert (\vec{u} \times \vec{v})  \cdot \vec{w} \vert$$
 which equals (with $a = 5.56 \, \mathring{A}$)
 
 $$V_{PC} = \frac{a^3}{4} = 4.297 \cdot 10^{-30} \,m^3 = 4.297 \cdot 10^{-24} \,cm^3$$
-\textbf{Packaging Factor}
+\subsubsection*{Packaging Factor}
 
 The Packaging Factor can be calculated as the ratio between the
 volume of the atoms in the unit cell to the volume of the unit cell.
@@ -79,15 +92,17 @@ volume consumed by the atoms to the whole volume.
 $$APF = \frac{4 \cdot V_{Atom} }{V_{UC}} = \frac{\pi}{3 \cdot \sqrt{2}} \approx 74\%$$
 
 
-\textbf{Density}
+\subsubsection*{Density}
 
-The atomic mass of calcium us given as:
+The atomic mass of calcium is given as \cite{lenntech_chemical_elements}:
 $$M_{Ca} = 40.078 \frac{g}{mol}$$
 
+By dividing the mass of the four atoms of the fcc unit by the volume of the
+unit cell we get the density of Calcium.
 
 $$\rho = \frac{4}{N_A} \cdot \frac{M_{Ca}}{V_{UC}} = 1.55 \frac{g}{cm^3}$$
 
-\textbf{(110) Plane}
+\subsubsection*{(110) Plane}
 
 To show that the plane contains reticular rows of atoms in the specified
 directions, we need to calculate the normal
@@ -119,7 +134,7 @@ By knowing that the three directions lay inside or parallel to the plane, we
 showed that the plane contains reticular rows of atoms in the $[001]$, $[1\overline{1}0]$
 and $[\overline{1}11]$ directions.
 
-\textbf{Planes}
+\subsubsection*{Planes}
 
 In the following the planes $P1: \, (0\overline{3}2)$ and $P2: \,(\overline{1}21)$ are drawn inside the unit cell.
 The Miller-Indices of the planes corresbond to the following plane equations:
@@ -146,7 +161,7 @@ $$P2: \quad z = x -\frac{1}{2}y$$
 \end{figure}
 
 
-\textbf{Linear Density [110]}
+\subsubsection*{Linear Density [110]}
 
 \begin{figure}[H]
 	\centering
@@ -163,7 +178,7 @@ Therefore  (with $a = 5.56 \, \mathring{A}$)
 
 $$\lambda = \frac{2 \, Atoms}{\sqrt{2}a} = \frac{\sqrt{2}}{5.56} \frac{Atoms}{\mathring{A}}$$
 
-\textbf{Potential Energy}
+\subsubsection*{Potential Energy}
 
 The potential energy between to adjacent ions can be represented by
 
