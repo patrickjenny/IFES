@@ -1,4 +1,4 @@
-\subsection{Chapter 1} \label{chap1}
+\subsection{Crystal Structures} \label{chap1}
 
 First of all we need to identify in which structure calcium crystallizes.
 As it can be seen in \autoref{tab:StructuresAndCellDimension_Table1_2_Omar},
@@ -14,8 +14,8 @@ it crystallizes in a FCC-structure.
 
 FCC stands for \textit{Face-centered cubic}, which means 
 the Calcium crystal is built up uf cubes with atoms at each
-corner and an atom in the middle of each of the six cube planes.
-(As shown in \autoref{fig:face-centered_cubic_lattice})
+corner and an atom in the middle of each of the six cube planes
+(as shown in \autoref{fig:face-centered_cubic_lattice}).
 
 \subsubsection*{Unit Cell}
 The convential Unit Cell of a FCC lattice looks as follows:
@@ -36,7 +36,7 @@ $$\mathbf{R} = n_1 \vec{u} + n_2 \vec{v} + n_3 \vec{w}$$
 It may be said, that the lattice is invariant under the group of all 
 translations expressed by $\mathbf{R}$.
 
-The three primitive vectors for the fcc lattice are shown in 
+The three primitive vectors for the FCC lattice are shown in 
 \autoref{fig:prim_vec} and specified below.
 
 \begin{figure}[H]
@@ -46,9 +46,13 @@ The three primitive vectors for the fcc lattice are shown in
 	\label{fig:prim_vec}
 \end{figure}
 
-$$\vec{u} = \frac{a}{2} \left(\begin{matrix}1\\1\\0\\\end{matrix}\right) \qquad
-  \vec{v} = \frac{a}{2} \left(\begin{matrix}0\\1\\1\\\end{matrix}\right) \qquad
-  \vec{w} = \frac{a}{2} \left(\begin{matrix}1\\0\\1\\\end{matrix}\right)$$
+\begin{equation}
+	\vec{u} = \frac{a}{2} \left(\begin{matrix}1\\1\\0\\\end{matrix}\right) \qquad
+	\vec{v} = \frac{a}{2} \left(\begin{matrix}0\\1\\1\\\end{matrix}\right) \qquad
+	\vec{w} = \frac{a}{2} \left(\begin{matrix}1\\0\\1\\\end{matrix}\right)
+	\label{eq:prim_vec}
+\end{equation}
+
 
 Whith these 3 base vectors a parallelepiped is given which is a primitive cell.
 The volume of the primitive cell can be calculated with the following formula
@@ -97,7 +101,7 @@ $$APF = \frac{4 \cdot V_{Atom} }{V_{UC}} = \frac{\pi}{3 \cdot \sqrt{2}} \approx 
 The atomic mass of calcium is given as \cite{lenntech_chemical_elements}:
 $$m_{Ca} = 40.078 \frac{g}{mol}$$
 
-By dividing the mass of the four atoms of the fcc unit by the volume of the
+By dividing the mass of the four atoms inside the FCC unit cell by the volume of the
 unit cell we get the density of Calcium.
 
 $$\rho = \frac{4}{N_A} \cdot \frac{m_{Ca}}{V_{UC}} = 1.55 \frac{g}{cm^3}$$
@@ -180,7 +184,7 @@ $$\lambda = \frac{2 \, Atoms}{\sqrt{2}a} = \frac{\sqrt{2}}{5.56} \frac{Atoms}{\m
 
 \subsubsection*{Potential Energy}
 
-The potential energy between to adjacent ions can be represented by
+The potential energy between to adjacent ions can be represented by:
 
 \begin{equation}
 	E(r) = - \frac{A}{r} + \frac{B}{r^n}

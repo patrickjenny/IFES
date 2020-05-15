@@ -1,6 +1,6 @@
-\subsection{Chapter 2}
+\subsection{Diffraction in Crystals} \label{chap2}
 
-\subsubsection*{Geometric Structure Factor}
+\subsubsection*{Geometric Structure Factor} 
 
 The structure factor gives the amplitude of a scattered wave arising
 from the atoms with a single primitive cell. 
@@ -22,7 +22,7 @@ For a perfect crystal the lattice gives the reciprocal lattice, which determines
 F_{hkl} = \sum_{j = 1}^{N} f_j \mathrm{e}^{[-2\pi i(hx_j + ky_j + lz_j)]}
 \end{equation}
 
-The FCC lattice is a Bravais lattice, and its Fourier transform is a body-centered cubic lattice. However to obtain $F_{hkl}$ without this shortcut, consider an FCC crystal with one atom at each lattice point as a primitive or simple cubic with a basis of 4 atoms, at the origin $ x_j, y_j, z_j = (0, 0, 0)$ and at the three adjacent face centers $ x_j, y_j, z_j = \Big(\frac{1}{2}, \frac{1}{2} , 0\Big), \Big(0, \frac{1}{2} , \frac{1}{2}\Big)\ \mathrm{and}\  \Big(\frac{1}{2} , 0 , \frac{1}{2}\Big) $
+As seen in \autoref{chap1} a FCC unit cell contains 4 atoms, one at the origin $ x_j, y_j, z_j = (0, 0, 0)$ and one at the three adjacent face centers $ x_j, y_j, z_j = \Big(\frac{1}{2}, \frac{1}{2} , 0\Big), \Big(0, \frac{1}{2} , \frac{1}{2}\Big)\ \mathrm{and}\  \Big(\frac{1}{2} , 0 , \frac{1}{2}\Big) $
 
 $$
 F_{hkl} = \sum_{j = 1}^{4} f_j \mathrm{e}^{[-2\pi i(hx_j + ky_j + lz_j)]} = f[1 + (-1)^{h+k} + (-1)^{k+l} + (-1)^{h+l}]
@@ -69,13 +69,21 @@ After few transformation we get:
 $$
 d_{hkl} = \frac{a}{\sqrt{h^2 + l^2 + k^2}}
 $$
+
 Planes where we obtain a first 3 difraction maximums are following: 
-$$P_1 = (111) \qquad P_2 = (200) \qquad P_3 = ( 220) $$  
+(These are the first three planes which meet the condition of all
+indices even or all odd)
+
+$$P_1 = (111) \qquad P_2 = (200) \qquad P_3 = ( 220) $$ 
+
 We can calculate interplanar distances:
 
-$$d_{hkl1} = \frac{5,58}{\sqrt{1^2 + 1^2 + 1^2}} = 3,23 \AA$$
-$$d_{hkl2} = \frac{5,58}{\sqrt{2^2 + 0^2 + 0^2}} = 2,79 \AA$$
-$$d_{hkl1} = \frac{5,58}{\sqrt{2^2 + 2^2 + 0^2}} = 1,98 \AA$$
+$$d_{111} = \frac{5,58}{\sqrt{1^2 + 1^2 + 1^2}} = 3,23 \AA$$
+$$d_{200} = \frac{5,58}{\sqrt{2^2 + 0^2 + 0^2}} = 2,79 \AA$$
+$$d_{220} = \frac{5,58}{\sqrt{2^2 + 2^2 + 0^2}} = 1,98 \AA$$
+
+Now we can calculate the Bragg angles for the corresponding maximas.
+For the X-Ray wavelength $\lambda = 1.54 \, \mathring{A}$
 
 $$
 sin \theta = \frac{\lambda}{2d}
@@ -94,7 +102,7 @@ In order to identify the reciprocal lattice we start by the calculating
 the reciprocal lattice vectors, which form a new set of basis vectors.
 
 As in \autoref{chap1} already explained the three primitive vectors
-of the fcc structure are:
+of the FCC structure are:
 
 $$\vec{u} = \frac{a}{2} \left(\begin{matrix}1\\1\\0\\\end{matrix}\right) \qquad
 \vec{v} = \frac{a}{2} \left(\begin{matrix}0\\1\\1\\\end{matrix}\right) \qquad
@@ -120,8 +128,8 @@ $$
     \vec{w^*} = \frac{2\pi}{a} \left(\begin{matrix}1\\-1\\1\\\end{matrix}\right)
 $$
 
-Which represents the primitive translation vectors of a bcc lattice.
-Therefore the bcc lattice is the reciprocal lattice to the fcc lattice
+Which represents the primitive translation vectors of a BCC lattice.
+Therefore the bcc lattice is the reciprocal lattice to the FCC lattice
 in which calcium crystallizes.
 
 
@@ -142,7 +150,7 @@ $(\overline{2}\overline{1}0)$ plane.
 	\label{fig:ewals_sphere}
 \end{figure}
 
-Due Geometric to considerations the following relatian can be derived.
+Due Geometric to considerations the following relation can be derived.
 
 $$\frac{G_{\overline{2}\overline{1}0}}{2a^*} = \frac{2 k_0}{G_{\overline{2}\overline{1}0}} \qquad \Rightarrow k_0 = \frac{5a^*}{4} = \frac{5\pi}{2a}$$
 

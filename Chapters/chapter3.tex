@@ -1,4 +1,7 @@
-\subsection{Chapter 3}
+\subsection{Lattice Vibrations} \label{chap3}
+We start this part with a approximation and treat the solid as a continuous medium.
+In reality a solid is composed discrete atoms, however for long wavelength the 
+approximation is valid.
 
 \subsubsection*{Density of States (1D)}
 
@@ -6,7 +9,7 @@ We start with the 1-D wave equation:
 $$\frac{\partial^2 u}{\partial x^2} - \frac{\rho}{Y} \frac{\partial u}{\partial t} = 0$$
 
 Which delivers a solution in the way of:\\
-(The time depence is not needed for calculatiing the density of states)
+(The time depence is not needed for calculating the density of states)
 \begin{equation}
     u = Ae^{ikx}
     \label{eq:sol_1d_wave}
@@ -22,7 +25,7 @@ Due to Eulers-Equation we get for $k$
 $$k = n \frac{2\pi}{L}$$
 
 If you choose integer values for $n$ and plot them along a $k$-axis, they form
-a one-dimensional mesh with a constants spacing $(2\pi/L)$ between the poins.
+an one-dimensional mesh with a constants spacing $(2\pi/L)$ between the points.
 
 \begin{figure}[H]
 	\centering
@@ -45,7 +48,7 @@ $$g(\omega) d\omega =\dfrac{L}{2\pi} dk$$
 
 By solving for $g(\omega)$ and multipling with a factor of two.
 (Due to the fact that we have to include the modes lying the negative k-region)\\
-We get:
+we get:
 
 \begin{equation}
     g(\omega) = \frac{L}{\pi} \frac{1}{\frac{d\omega}{d k}}
@@ -76,7 +79,7 @@ $$u = e^{i(k_x x + k_y y + k_z z)} = 1$$
 $$(k_x, \, k_y,\, k_z) = (n \frac{2\pi}{L}, \, m \frac{2\pi}{L}, \, l \frac{2\pi}{L})$$
 
 Each point in this $k$-space has a volume of $(2\pi/L)^3$. The number of
-modes that lie within a spherical shell with thikness $dk$ with a radius k 
+modes that lie within a spherical shell with thickness $dk$ with a radius k 
 and a volume $4/3\pi k^3$, is given by:
 
 $$\frac{d}{dk}{(\frac{L}{2\pi})}^3\frac{4}{3}\pi k^3 = {(\frac{L}{2\pi})}^3 4\pi k^2 dk$$
@@ -92,12 +95,13 @@ By applying the linear dispersion relation, we get:
     \label{eq:g_ome_3d_1}
 \end{equation}
 
-As there are three different modes associated with the same value for $q$.
+As there are three different modes associated with the same value for $q$
 (one longitudinal and 2 transversal modes). \autoref{eq:g_ome_3d_1} has to be
 multiplied by a factor of three to get the correct result.
 
 \begin{equation}
     g(\omega) = \frac{3V}{2\pi^2} \frac{\omega^2}{v_s^3}
+    \label{eq:g_ome_3d}
 \end{equation}
 
 Different to the 1-dimensional case the density of states
@@ -145,7 +149,7 @@ $$
 $$ \frac{V}{2\pi^2} \frac{\omega_D^3}{v_s^3} = 3N_A \qquad \Rightarrow
     w_D = (6\pi^2 n)^{\frac{1}{3}} v_s \textrm{ with } n=\frac{N_a}{V}$$
 
-The debye frequency is proportinal to the 3rd root of the concentrations
+The debye frequency is proportinal to the 3rd root of the concentration
 of the amtos $n$ in the solid. This is simply explained by 3-dimensional 
 $q$ space.
 
@@ -254,7 +258,7 @@ $\omega  \quad ... \quad \textrm{Frequency of the scattered beam}$\\
 $\omega_0  \quad ... \quad \textrm{Frequency of the initial beam}$\\
 $\omega(\mathbf{q})  \quad ... \quad \textrm{Frequency the phonon}$
 
-This means pratically instead of one diffraction maximum seen at $omega_0$ 
+This means pratically instead of one diffraction maximum seen at $\omega_0$ 
 now two maximum are located symmetrically arroun $w_0$ which can be used 
 to determine the frequency of the phonos.
 
@@ -266,4 +270,4 @@ As optical phonons in ionic crystal interacts strongly with light, this properti
 could be used to get further insides. Especially in the case of infrared light
 strong reflections and absorption appear. As optical phonons exist only in multi-atom
 base crystal, it could not be used for a simple $Ca$ crystal, but for example for
-$CaF_2$
+$CaF_2$.
