@@ -1,0 +1,49 @@
+\documentclass{report_class}
+
+\title{AD2}
+\subtitle{adf}
+\author{Patrick Jenny 100639\\Filip Banasiak 100661}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\centerline{Group: G9}
+	\pagenumbering{Roman}
+	
+	\tableofcontents
+	\newpage
+	
+	\input{Chapters/abstract}
+	\newpage
+
+	\clearpage
+	\pagenumbering{arabic}
+	
+	\section{Introduction}
+	\input{Chapters/introduction}
+	\newpage
+
+	\section{Results}
+		%------1-CHAPTER------%
+		\input{Chapters/chapter1}
+		\newpage
+
+		%------2-CHAPTER------%
+		\input{Chapters/chapter2}
+		\newpage
+
+		%------3-CHAPTER------%
+		\input{Chapters/chapter3}
+		\newpage
+
+	\section{Conclusion}
+	\input{Chapters/conclusion}
+	\newpage
+
+	\include{Chapters/references}
+	\newpage
+
+
+	\listoftables
+	\listoffigures
+\end{document}
