@@ -1,6 +1,17 @@
-\subsection{Chap 1 } \label{chap1}
+\subsection{The free Electron Model} \label{chap1}
 
-\subsubsection*{Question 1}
+By using the free electron model, some of the parameter
+of a given metal can be calculated. The given metal
+crystllizes in the fcc structue with a lattice parameter 
+for the convential unit cell of $0.409nm$. And a given 
+resistivity for room temperature.
+
+(Source \cite[Elementary Solid State Physics Chapter 4]{elementary_SSP})
+
+\subsubsection*{Collision Time}
+
+For calculating the collision time the following relation
+is used.
 
 \begin{equation}
     \sigma = \frac{N e^2 \tau}{m^*}
@@ -9,7 +20,8 @@
 
 At it is a monovalent metal and the FCC-Unit cell contains 
 4 atoms the concentration of the conduction electrons $N$ can be
-calculated as:
+calculated as ($a = 4.09 \mathring{A}$):
+
 $$N =\frac{4}{a^3}$$
 
 So for the collision time $\tau$ follows:
@@ -21,7 +33,6 @@ $\rho = 2.13 \mu \Omega cm$
 which leads to a conducitivity of
 $\sigma = \frac{1}{\rho} = 4.695\cdot 10^7 \frac{1}{\Omega m}$
 
-$a = 4.09 \mathring{A}$
 
 $$\tau =\frac{\sigma \cdot m^* \cdot a^3}{4e^2} = 28.5 \cdot 10^{-14}s$$
 
@@ -36,14 +47,27 @@ $$E = \frac{U}{L} = 2 \frac{V}{m}$$
 
 As for the current density the following relations are known.
 
-$$J = \sigma E \qquad J = nev_D$$
+$$J = \sigma E \qquad J = Nev_D$$
 
 So for the drift velocitiy follows:
 
-$$v_D =  \frac{\sigma E}{n e}$$
+$$v_D =  \frac{\sigma E}{N e} = 1.003 \frac{m}{s}$$
 
 \subsubsection*{Question 3}
 
+The resitivity of a metal as a function can be best described;
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Graphics/Chapter1/temp_resistitviy.png}
+    \caption{The normailized resitivity $\rho(T)/\rho(290\degree K)$ versus $T$ 
+    for Na in the low-temperature region (a), and at higher temperatures (b) 
+    \cite[Elementary Solid State Physics p. 148]{elementary_SSP} }
+    \label{fig:temp_resistitviy}
+\end{figure}
+
+At temperatures near $0 \degree K$ the resitivity has a small constant 
+valuu. The resitivity increases with T \autoref{fig:temp_resistitviy} a.
 
 \subsubsection*{Fermi}
 
@@ -61,7 +85,7 @@ the electrons below the fermi level can not absorb energy due to the exclusiion
 principle.
 
 Which leads to the \textit{Fermi-Dirac distribution}, which gives
-the probability that the level $E$ is occupied by an electron.
+the probability that the level $E$ is occupied by an electron
 
 \begin{equation}
     f(E) = \frac{1}{e^{(E-E_F)/kT}+1}
@@ -94,7 +118,7 @@ $(v_x, \, v_y, \, v_z)$ the sphere has an radius of $v_F$
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{Graphics/Chapter1/Fermi_Sphere.png}
-    \caption{The Fermi surface and the Fermi sphere \cite[asdfadf]{elementary_SSP} }
+    \caption{The Fermi surface and the Fermi sphere \cite[Elementary Solid State Physics p. 268]{elementary_SSP} }
     \label{}
 \end{figure}
 

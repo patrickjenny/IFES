@@ -1,4 +1,6 @@
-\subsection{Chap 3} \label{chap3}
+\subsection{Semiconductors} \label{chap3}
+
+(Source \cite[Elementary Solid State Physics Chapter 6]{elementary_SSP})
 
 \subsubsection*{Question 1}
 The carrier distribution function in CB für an intrinsic semiconductor
@@ -99,7 +101,12 @@ $$np = n_i^2$$
 
 $$n = \frac{n_i^2}{p} = \frac{(0.959 \cdot 10^3 \frac{1}{m^3})^2}{10^{18} \frac{1}{m^3}} = 9.197 \cdot 10^{-13} \frac{1}{m^3}$$
 
+As for calculating $(E_F-E_{Fi})$ the temperature dependence of the
+concentration on electrons and holes can be used:
+
 $$n = n_i e^{\frac{E_F-E_{Fi}}{k_BT}}  \qquad p = n_i e^{-\frac{E_F-E_{Fi}}{k_BT}}$$
+
+Which leads to:
 
 $$(E_F-E_{Fi}) = \ln\left( \frac{n}{n_i} \right) \cdot k_BT$$
 
@@ -107,7 +114,15 @@ $$(E_F-E_{Fi}) = -0.896 eV $$
 
 \subsubsection*{Question 5}
 
-$$\epsilon_r = 8.9$$
+As the potential for Hole is given as:
+
+\begin{equation}
+  V(r) = -\frac{e^2}{4\pi \epsilon_r \epsilon_0 r}
+\end{equation}
+
+By using the Bohr model, the beinding energy can be found, which
+corresponds to the ground state of the acceptor and calculatetd.
+With using $\epsilon_r = 8.9$ and $m_h = 0.80\,m_0$
 
 
 $$
@@ -115,6 +130,15 @@ E_a = \frac{1}{\epsilon_r^2} \left(\frac{m_h}{m_0}\right) \underbrace{\left[\fra
 $$
 
 $$E_a =  0.14eV$$
+
+\autoref{fig:acceptorLevel} shows the acceptor level inside the energy gap.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.35\linewidth]{Graphics/Chapter3/acceptorLevel.png}
+  \caption{The acceptor level in a semiconductor \cite[Elementary Solid State Physics p. 268]{elementary_SSP} }
+  \label{fig:acceptorLevel}
+\end{figure}
 
 \subsubsection*{Question 6}
 
