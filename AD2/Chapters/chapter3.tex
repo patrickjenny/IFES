@@ -140,6 +140,73 @@ $$E_a =  0.14eV$$
   \label{fig:acceptorLevel}
 \end{figure}
 
-\subsubsection*{Question 6}
+\subsubsection*{Compensated semiconductor Question 6}
 
-\subsubsection*{Question 7}
+Compensated semiconductor are those in which donors and acceptors are related in such a way that their opposing electrical effects are partially cancelled
+In the compensated semiconductor there are additional sources of current carriers and therefore
+$$
+n - p = \Delta n \neq 0.
+$$
+Fermi energy value $\epsilon_F$ in the doped semiconductor will change relative to $\epsilon_{F(i)}$ values for an intrinsic semiconductor. From here we can write the equation
+$$
+n = n_i exp\bigg[+\frac{\epsilon_F - \epsilon_{F(i)}}{k_B T}\bigg] \ \mathrm{and} \
+p = p_i exp\bigg[-\frac{\epsilon_F - \epsilon_{F(i)}}{k_B T}\bigg]
+$$
+Taking both of those formulas we get this relation
+\begin{equation}
+\frac{\Delta n}{n_i} = 2\sinh{\bigg[\frac{\epsilon_F - \epsilon_{F(i)}}{k_B T}\bigg]}
+\end{equation}
+In donor semiconductors $\Delta n > 0$ so Fermi energy $\epsilon_F > \epsilon_{F(i)}$ \\
+In acceptor semiconductors $\Delta n < 0$ so Fermi energy $\epsilon_F < \epsilon_{F(i)}$
+
+\subsubsection*{Intrinsic resistivity Question 7}
+In order to determine resistivity of the intrinsic cadmium sulfide (CdS) at 300 K, proceed as follows. In an intrinsic semiconductor electron carrier concentration $n$ equals to hole concenctration $p$ and this both equals intrinsic carrier concetration $n_i$. That is
+$$
+n = p = n_i 
+$$
+The resistivity $\rho$ of the intrinsic semiconductor is given by
+$$
+\rho_{intrinsic} = \frac{1}{q(\mu_nn + \mu_pp)}
+$$
+where charge $q = 1.6 \times 10^{-19}\ \mathrm{C}$, electron mobility is $\mu_n$ and hole mobility is $\mu_p$.
+\begin{equation}
+CalculationS
+\end{equation}
+
+
+\subsubsection*{Free excition Question 9}
+
+An exciton is a bound state of an electron and an electron hole which are attracted to each other by the electrostatic Coulomb force. It is an electrically neutral quasiparticle that exists in insulators, semiconductors and some liquids. The exciton is regarded as an elementary excitation of condensed matter that can transport energy without transporting net electric charge.
+
+\subsubsection*{P-N junction Question 10}
+
+A $P-N$ junction is the juxtaposition of a n-type and a p-type piece of semiconductor, taken originally from the same block of crystal. The difference between the densities of donors and acceptors $ND - NA$ undergoes a very sharp variation from a negative value in the $P$ region to a positive value in the N region. An abrupt junction is by definition a junction in which the doping type changes over a very small distance compared to the spatial extent of the depletion region
+When the junction meets thermal equilibrium, the Fermi energy has a constant value throughout the whole device. The energies of conduction and valence bands are therefore shifted up or down, and exhibit a smooth variation across the depletion region. As a consequence, there is an electrostatic potential energy difference appearing between the $P$ and $N$ region, equal to $qV_d$.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.35\linewidth]{Graphics/Chapter3/PNjunction.PNG}
+  \caption{asdf}
+  \label{fig:PNjunction}
+\end{figure}
+
+For a p–n junction, letting  $C_A(x)$ and $C_D(x)$ be the concentrations of acceptor and donor atoms respectively, and letting  $N_0(x)$ and $P_0(x)$ be the equilibrium concentrations of electrons and holes respectively, yields, by Poisson's equation:v
+$$
+-\frac{d^2V}{dx^2} = \frac{\rho}{\epsilon} = \frac{q}{\epsilon}[(P_0 - N_0) + (C_D - C_A)]
+$$
+where V is the electric potential, $\rho$ is the charge density, $\epsilon$ is permittivity and $q$ is the magnitude of the electron charge. Letting $d_p$  be the width of the depletion region within the p-side, and letting $d_n$ be the width of the depletion region within the n-side, it must be that
+$$
+d_pC_A = d_nC_D
+$$
+because the total charge on either side of the depletion region must cancel out. Therefore, letting $D$ and $\Delta V$ represent the entire depletion region and the potential difference across it,
+$$
+\Delta V = \int \int \frac{q}{\epsilon}[(P_0 - N_0) + (C_D - C_A)] dxdx = \frac{C_AC_D}{C_A + C_D} \frac{q}{2\epsilon} (d_p + d_n)^2
+$$
+where $P_0 = N_0 = 0$ because we are in the depletion region. And thus, letting = $d$ be the total width of the depletion region, we get
+$$
+d = \sqrt{\frac{2 \epsilon}{q} \frac{C_A + C_D}{C_AC_D} \Delta V}
+$$
+$\Delta V$ can be written as $\Delta V_0 + \Delta V_{ext}$ , where we have broken up the voltage difference into the equilibrium plus external components. The equilibrium potential results from diffusion forces, and thus we can calculate $V$  by implementing the Einstein relation and assuming the semiconductor is nondegenerate
+$$
+V = \frac{k_B T}{e} \ln\bigg(\frac{n_n}{n_p}\bigg)
+$$
