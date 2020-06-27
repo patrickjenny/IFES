@@ -55,6 +55,16 @@ $$v_D =  \frac{\sigma E}{N e} = 1.003 \frac{m}{s}$$
 
 \subsubsection*{Question 3}
 
+In the free-electron model, the electron dispersion relation is,
+
+$$E(\vec{k}) = \frac{\hbar^2k^2}{2m^*}$$
+
+Here $m^*$ is the effective mass. At low temperature, all of
+the $k$ states below the Fermi wave vector $k_F$ are filled 
+and all the states above $k_F$ are empty.
+(see the next subsection)
+
+
 The resitivity of a metal as a function can be best described;
 
 \begin{figure}[H]
@@ -67,7 +77,10 @@ The resitivity of a metal as a function can be best described;
 \end{figure}
 
 At temperatures near $0 \degree K$ the resitivity has a small constant 
-valuu. The resitivity increases with T \autoref{fig:temp_resistitviy} a.
+value. The resitivity increases with T \autoref{fig:temp_resistitviy} a.
+For higher values for $T$ the value of the resistivity
+increases linear with $T$. Room temperature $T=300\degree K$
+usually falls in the linear region.
 
 \subsubsection*{Fermi}
 
@@ -97,7 +110,7 @@ the probability that the level $E$ is occupied by an electron
     \caption{Fermi-Dirac distribution function at different temperatures: T3> T2>T1
      (and T0 = 0 K). At the absolute zero temperature (T0), the probability of an 
      electron to have an energy below the Fermi energy EF is equal to 1, while the 
-     probability to have higher energy is zero.}
+     probability to have higher energy is zero. \cite{fermi_dist}}
     \label{}
 \end{figure}
 
@@ -123,34 +136,58 @@ $(v_x, \, v_y, \, v_z)$ the sphere has an radius of $v_F$
 \end{figure}
 
 \subsubsection*{Cyclotron}
+
+The motion of an electron in a magnetic field can be 
+described by the following differential equation.
+
 \begin{equation}
     -e (\vec{v} \times \vec{B}) =  m \frac{d\vec{v}}{dt}
 \end{equation}
 
 With the given information that $\vec{B} = B\vec{z}$
-The equation above lead to the following:
+The equation above lead to the following two 
+equation.
 
-$-e v_y B = m \frac{d}{dt}v_x$\\
-$e v_x B = m \frac{d}{dt}v_y$
+$$-e v_y B = m \frac{d}{dt}v_x$$
+$$e v_x B = m \frac{d}{dt}v_y$$
 
 Which can be solved with the additional information
 
 $$x = k_{0x}$$
 
+This leads to the Cyclotron frequency of:
+
 $$\omega = \frac{eB}{m^*}$$
 
 \subsubsection*{Plasma Frequency}
 
+In the range of the plasma frequency the metalic medium acts
+like a nonabsorbing transparent dielectric.
+In \autoref{fig:PlasmaFrequency} the reflection coefficient
+of a metal in dependece of the angular frequency is shown. 
+The plasma region is shwon where the reflection coefficient is 
+zero.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Graphics/Chapter1/PlasmaFrequency.png}
+    \caption{The plasma reflection edge.
+    \cite[Elementary Solid State Physics p. 166]{elementary_SSP} }
+    \label{fig:PlasmaFrequency}
+\end{figure}
+
+The plasma frequency can be calculated as:
+
 \begin{equation}
-    w_P = \frac{Ne^2}{\epsilon_L m^*}
+    w_P^2 = \frac{Ne^2}{\epsilon_L m^*} \Rightarrow w_P = \sqrt{\frac{Ne^2}{\epsilon_L m^*}}
 \end{equation}
 
-With the parameter given
-
-$m^*=m_0$
-
-$\epsilon_L = \epsilon_0$
+With the parameter given $m^*=m_0$ and $\epsilon_L = \epsilon_0$.
 
 Tha plasma frequency can be calculated as:
 
-$$w_P = 1.861 \cdot 10^{11} \frac{1}{s}$$
+$$w_P = 1.364 \cdot 10^{16} \frac{1}{s}$$
+
+which corresponds to an energy of 
+
+$$E_P = \hbar \omega = 1.439\cdot 10^{-23}J = 8.978eV$$
