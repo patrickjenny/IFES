@@ -135,7 +135,20 @@ $(v_x, \, v_y, \, v_z)$ the sphere has an radius of $v_F$
     \label{}
 \end{figure}
 
-\subsubsection*{Cyclotron}
+\subsubsection*{Cyclotron Frequency}
+
+By applying a magnetic field to an metal, the electron inside are 
+caused to move in a counterclockwise circular fashion. 
+The frequency is called the cyclotron frequency.
+
+\autoref{fig:Cyclotron_motion} shows this schematically. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Graphics/Chapter1/cyclotron_motion.png}
+    \caption{Cyclotron Motion \cite[Elementary Solid State Physics p. 160]{elementary_SSP} }
+    \label{fig:Cyclotron_motion}
+\end{figure}
 
 The motion of an electron in a magnetic field can be 
 described by the following differential equation.
@@ -151,9 +164,9 @@ equation.
 $$-e v_y B = m \frac{d}{dt}v_x$$
 $$e v_x B = m \frac{d}{dt}v_y$$
 
-Which can be solved with the additional information
+Which can be solved with the additional information $$k(0) = k_{0x}$$
 
-$$x = k_{0x}$$
+$$\vec{k} = k_{0x} \cos(\left(\frac{eB}{m^*}t\right) \hat{x} +  k_{0y} \sin \left(\frac{eB}{m^*}t\right) \hat{y}$$
 
 This leads to the Cyclotron frequency of:
 
