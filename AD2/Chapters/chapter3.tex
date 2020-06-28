@@ -45,8 +45,10 @@ $$ N_c = 2 \left( \frac{m_e^*k_BT}{2\pi\hbar^2}\right)^{\frac{3}{2}}$$
 Which leads to the following result
 $$ N_c = 2.415 \cdot 10^{24} \frac{1}{m^3}$$
 
+By using the values provided in \autoref{tab:CdS_Para}
+
 In the same manner also the density of states in the valence band can be
-calculatetd.
+calculated.
 
 $$ N_v = 2 \left( \frac{m_h^*k_BT}{2\pi\hbar^2}\right)^{\frac{3}{2}}$$
 $$ N_v = 1.796 \cdot 10^{25} \frac{1}{m^3}$$
@@ -60,9 +62,11 @@ $$n_i = p_i = 2 \left( \frac{k_BT}{2\pi\hbar^2} \right)^{\frac{3}{2}}
   (m_e^*m_h^*)^{\frac{3}{4}} e^{-\frac{E_g}{2k_BT}}$$
 $$n_i = p_i = 0.959 \cdot 10^3 \frac{1}{m^3}$$
 
-For the intrinsic Fermi can be calculatetd as 
+For the intrinsic Fermi Level the following relation is knwon,
 
 $$E_{Fi} = \frac{E_g}{2} + \frac{3}{4} k_B T \ln\left( \frac{m_h^*}{m_e^*} \right)$$
+
+which leads to:
 
 $$E_{Fi} = 1.326 eV$$
 
@@ -84,12 +88,12 @@ If the given semiconductor CdS was doped p-type with a
 concentration of $10^{15}$ acceptor impurities the following
 about the concentration and holes at $T=0\degree K$ can be said.
 
-At this point the thermal energy becomes too small to cause electron exication, which means that all electrons fall from
+At this point the thermal energy becomes too small to cause electron excitation, which means that all electrons fall from
 the conducition Band into the donor level. Also the conductivity
 goes to zero. This process is called freeze out. 
 So for the concentration of electron and holes at $T=0 \degree K$
 
-The concentration of the elctrons:
+The concentration of the electrons:
 
 $$n(T=0 \degree K) = 0$$
 
@@ -111,7 +115,7 @@ semiconductor changes. The doping is shown in  \autoref{fig:impuritiesCds}.
   \label{fig:impuritiesCds}
 \end{figure}
 
-As the concentration of acceptor impurities is much higher then
+As the concentration of acceptor impurities is much higher than
 the holes concentration of the intrinsic semiconductor 
 $(10^{15} \frac{1}{cm^3} \gg p_i)$
 
@@ -195,7 +199,7 @@ In donor semiconductors $\Delta n > 0$ so Fermi energy $\epsilon_F > \epsilon_{F
 In acceptor semiconductors $\Delta n < 0$ so Fermi energy $\epsilon_F < \epsilon_{F(i)}$
 
 \subsubsection*{Intrinsic Resistivity}
-In order to determine resistivity of the intrinsic cadmium sulfide (CdS) at 300 K, proceed as follows. In an intrinsic semiconductor electron carrier concentration $n$ equals to hole concenctration $p$ and this both equals intrinsic carrier concetration $n_i$. That is
+In order to determine resistivity of the intrinsic cadmium sulfide (CdS) at 300 K, proceed as follows. In an intrinsic semiconductor electron carrier concentration $n$ equals to hole concenctration $p$ and this both equals intrinsic carrier concentration $n_i$. That is
 $$
 n = p = n_i 
 $$
@@ -203,9 +207,10 @@ The resistivity $\rho$ of the intrinsic semiconductor is given by
 $$
 \rho_{intrinsic} = \frac{1}{q(\mu_nn + \mu_pp)}
 $$
-where charge $q = 1.6 \times 10^{-19}\ \mathrm{C}$, electron mobility is $\mu_n$ and hole mobility is $\mu_p$.
+where charge $q = 1.6 \times 10^{-19}\ \mathrm{C}$, electron mobility is $\mu_n$ and hole mobility is $\mu_p$ (see \autoref{tab:CdS_Para})
+and $n=p=n_i= 959 m^{-3}$
 $$
-\rho_{intrinsic} = 1,63 \, \Omega \cdot cm
+\rho_{intrinsic} = 9.57 \cdot 10^{16} \, \Omega \cdot m
 $$
 It is evident that resisitivity will be maximum when the conductivity will be minimum. Since $p > n$ the semiconductor must be doped with acceptor impurities for minimum resisitivity. Substituting this condition to ratio becomes:
 $$
@@ -215,10 +220,10 @@ $$
 
 If we take this ratio and our $\rho_{intrinsic}$ we have
 $$
-\rho_{max} = \frac{2}{\sqrt{3}} \rho_{max}
+\rho_{max} = \frac{2}{\sqrt{3}} \rho_{intrinsic}
 $$
 $$
-\rho_{max} = 1,89 \, \Omega \cdot cm
+\rho_{max} = 1.11 \cdot 10^{17} \, \Omega \cdot m
 $$
 
 \subsubsection*{Direct and Indirect Band Gap}
@@ -238,7 +243,7 @@ As the minimum of the conduction band as well as the maximum of the valence band
 at $\Gamma$ ($\vec{k}= 0)$. CdS can be identified as a semiconductor with
 direct Band Gap.
 
-As the Band Gap Energy is minimal at $k=0$, it will incease 
+As the Band Gap Energy is minimal at $k=0$, it will increase 
 with $T$ due to the added kinetic energie to the electrons.
 
 The Band Gap Energie can be easily measured by use of the fact
