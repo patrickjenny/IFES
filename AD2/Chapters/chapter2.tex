@@ -1,6 +1,6 @@
 \subsection{Energy Bandy in Solids} \label{chap2}
 
-\subsubsection*{Bloch electron}
+\subsubsection*{Electron of Bloch}
 Independent electrons which obey the one electron Schrödinger equation for a periodic potential are called Bloch
 electrons and obey Bloch’s theorem. Own functions of $\Psi_k(r)$ of the Hamiltonian in the field perfectly ideally periodic crystal lattice can be presented in the form of:
 \begin{equation}
@@ -24,7 +24,7 @@ Bloch's theorem makes it easier to determine the electron's wave functions in a 
 be limited to one unit cell, while the original wave function in the equation
 Schrödinger applies to the whole crystal.
 
-\subsubsection*{Free electron model}
+\subsubsection*{Band Dispersion compared to Free Electro Model}
 
 The free electron model allows to describe, for example,
 specific heat, thermal conductivity and thermal expansion. This model, however, does not include where observed differences come from between metals, semiconductors and insulators. To this end, necessary
@@ -36,9 +36,27 @@ or completely planted. If one of the permitted bands is partially filled, then
 the crystal behaves like a metal. Where one or two bands are planted only in
 slightly or very little crystal is a semiconductor
 
-\subsubsection*{Question 3}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\linewidth]{Graphics/Chapter2/ek_allowed.png}
+  \caption{(a) Plot of energy $\varepsilon$ versus wavevector $k$ for a free electron. (b) Plot of energy versus wavevector for an electron in a monoatomic
+  linear lattice of lattice constant $a$. The energy gap $E_g$ shown is associated with the first Bragg reflection as $k=\pm \pi/a$; other gaps 
+  are found at $k=\pm n\pi/a$, for integral values of $n$.
+  \cite[Introduction to  Solid State Physics p. 177]{kittel} }
+  \label{fig:temp_resistitviy}
+\end{figure}
+
+\subsubsection*{Velocity of Bloch Electron}
+
+The the given energy of an electron of Bloch 
+
+$$E(k) =  -E_0\left[\cos(k_xa)+1\right]$$ 
+ 
+the velocity can be calculated by the following equation.
 
 $$\vec{v} = \frac{1}{\hbar} \nabla_k E(\vec{k})$$
+
+Which leads to the following eqation for the velocity
 
 $$v_x = \frac{1}{h\hbar} \frac{d}{dk_x} -E_0\left[\cos(k_xa)+1\right] = \frac{E_0a}{h} \sin(k_xa)$$
 

@@ -1,9 +1,10 @@
 \subsection{Semiconductors} \label{chap3}
 
-(Source \cite[Elementary Solid State Physics Chapter 6]{elementary_SSP})
+(Source: \cite[Elementary Solid State Physics Chapter 6]{elementary_SSP} and
+\cite[Molecular and Solid State Physics Script, TU Graz]{LAMPTU})
 
-\subsubsection*{Question 1}
-The carrier distribution function in CB für an intrinsic semiconductor
+\subsubsection*{Maximum of the Carrier Diestribution Function}
+The carrier distribution function in CB for an intrinsic semiconductor
 is given as the product:
 
 $$g_e(E) f(E)$$
@@ -14,7 +15,7 @@ $$g_e(E) = \frac{1}{2\pi^2} \left( \frac{2m_e^*}{\hbar} \right)^\frac{3}{2} (E-E
 
 $$f(E) = \frac{1}{e^{(E-E_F)/k_BT}+1}  \approx e^{-\frac{E-E_F}{k_BT}}$$
 
-So for the maximum 
+To calculate the maximum of the function the following equation must be solved.
 
 $$\frac{d}{dE} \left(\frac{1}{2\pi^2} \left( \frac{2m_e^*}{\hbar} \right)^\frac{3}{2} (E-E_C)^\frac{1}{2} e^{-\frac{E-E_F}{k_BT}} \right) = 0$$
 
@@ -24,19 +25,20 @@ $$\frac{d}{dE} \left( (E-E_C)^\frac{1}{2} e^{-\frac{E}{k_BT}} \right) = 0$$
 
 $$\frac{1}{2} (E-E_C)^{-\frac{1}{2}} e^{-\frac{E}{k_BT}} + \frac{-1}{k_BT} (E-E_C)^\frac{1}{2} e^{-\frac{E}{k_BT}} = 0$$
 
-And finaly
+which simply can be solve for $E$
 
 $$E = E_C + \frac{k_BT}{2}$$
 
+So the maximum of $g_e(E) f(E)$ lies at $E = E_C + \frac{k_BT}{2}$.
 
-\subsubsection*{Question 2}
+\subsubsection*{Intrinsic Semiconductor}
 
-For the effective density of states in theh conducition beand 
+For the effective density of states in the conducition band 
 the following relation is known:
 
 $$ N_c = 2 \left( \frac{m_e^*k_BT}{2\pi\hbar^2}\right)^{\frac{3}{2}}$$
 
-Which lead to the following result
+Which leads to the following result
 $$ N_c = 2.415 \cdot 10^{24} \frac{1}{m^3}$$
 
 In the same manner also the density of states in the valence band can be
@@ -72,7 +74,7 @@ which means for $T \gg 0 \degree K$ the same temperature dependence as for the e
 The intrinsic fermi level increases linearly with $T$
 
 
-\subsubsection*{Question 3}
+\subsubsection*{P-type doped Semiconductor at $T=0\degree K$}
 
 If the given semiconductor CdS was doped p-type with a
 concentration of $10^{15}$ acceptor impurities the following
@@ -93,10 +95,10 @@ holes is the same as it was initialy.
 $$p(T=0 \degree K) = 10^{15}cm^{-3}$$
 
 
-\subsubsection*{Question 4}
+\subsubsection*{P-type doped Semiconductor at $T=300\degree K$}
 
 By doping CdS with acceptor impurities the physical properties of the
-semiconductor changes. \autoref{fig:impuritiesCDs}
+semiconductor changes. The doping is shown in  \autoref{fig:impuritiesCds}.
 
 \begin{figure}[H]
   \centering
@@ -141,7 +143,7 @@ move to the valence band.
 By increasing the temperature the Fermi Level
 will move towards the middle of the gab.
 
-\subsubsection*{Question 5}
+\subsubsection*{Ionization energy of an Acceptor}
 
 As the potential for Hole is given as:
 
@@ -149,7 +151,7 @@ As the potential for Hole is given as:
   V(r) = -\frac{e^2}{4\pi \epsilon_r \epsilon_0 r}
 \end{equation}
 
-By using the Bohr model, the beinding energy can be found, which
+By using the Bohr model, the binding energy can be found, which
 corresponds to the ground state of the acceptor and calculatetd.
 With using $\epsilon_r = 8.9$ and $m_h = 0.80\,m_0$
 
@@ -169,7 +171,7 @@ $$E_a =  0.14eV$$
   \label{fig:acceptorLevel}
 \end{figure}
 
-\subsubsection*{Compensated semiconductor Question 6}
+\subsubsection*{Compensated Semiconductor}
 
 Compensated semiconductor are those in which donors and acceptors are related in such a way that their opposing electrical effects are partially cancelled
 In the compensated semiconductor there are additional sources of current carriers and therefore
@@ -188,7 +190,7 @@ Taking both of those formulas we get this relation
 In donor semiconductors $\Delta n > 0$ so Fermi energy $\epsilon_F > \epsilon_{F(i)}$ \\
 In acceptor semiconductors $\Delta n < 0$ so Fermi energy $\epsilon_F < \epsilon_{F(i)}$
 
-\subsubsection*{Intrinsic resistivity Question 7}
+\subsubsection*{Intrinsic Resistivity}
 In order to determine resistivity of the intrinsic cadmium sulfide (CdS) at 300 K, proceed as follows. In an intrinsic semiconductor electron carrier concentration $n$ equals to hole concenctration $p$ and this both equals intrinsic carrier concetration $n_i$. That is
 $$
 n = p = n_i 
@@ -198,11 +200,24 @@ $$
 \rho_{intrinsic} = \frac{1}{q(\mu_nn + \mu_pp)}
 $$
 where charge $q = 1.6 \times 10^{-19}\ \mathrm{C}$, electron mobility is $\mu_n$ and hole mobility is $\mu_p$.
-\begin{equation}
-CalculationS
-\end{equation}
+$$
+\rho_{intrinsic} = 1,63 \, \Omega \cdot cm
+$$
+It is evident that resisitivity will be maximum when the conductivity will be minimum. Since $p > n$ the semiconductor must be doped with acceptor impurities for minimum resisitivity. Substituting this condition to ratio becomes:
+$$
+\frac{\rho_{max}}{\rho_{intrinsic}} = \frac{4 \mu_p}{2\mu_p \sqrt{3}} = \frac{2}{\sqrt{3}}
+$$
 
-\subsubsection*{Direct and Indirect Band Gab Question 8}
+
+If we take this ratio and our $\rho_{intrinsic}$ we have
+$$
+\rho_{max} = \frac{2}{\sqrt{3}} \rho_{max}
+$$
+$$
+\rho_{max} = 1,89 \, \Omega \cdot cm
+$$
+
+\subsubsection*{Direct and Indirect Band Gap}
 
 In \autoref{fig:CDS-Band} the Band Gab structure $E(\vec{k})$ for CdS and ZnS as 
 a model result is showed.
@@ -231,7 +246,7 @@ where $\alpha$ rapidly raises. At this energy the electron
 can move to the conducition band and absorb the photon.
 
 
-\subsubsection*{Free excition Question 9}
+\subsubsection*{Free Excition}
 
 (Source \cite[Introduction to Solid State Physics p. 312]{kittel})
 
@@ -261,14 +276,14 @@ cells which lie in the is obtained
 
 $$N \approx 482 \textrm{ Unit Cells}$$
 
-\subsubsection*{P-N junction Question 10}
+\subsubsection*{P-N junction}
 
 A $P-N$ junction is the juxtaposition of a n-type and a p-type piece of semiconductor, taken originally from the same block of crystal. The difference between the densities of donors and acceptors $ND - NA$ undergoes a very sharp variation from a negative value in the $P$ region to a positive value in the N region. An abrupt junction is by definition a junction in which the doping type changes over a very small distance compared to the spatial extent of the depletion region
 When the junction meets thermal equilibrium, the Fermi energy has a constant value throughout the whole device. The energies of conduction and valence bands are therefore shifted up or down, and exhibit a smooth variation across the depletion region. As a consequence, there is an electrostatic potential energy difference appearing between the $P$ and $N$ region, equal to $qV_d$.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.35\linewidth]{Graphics/Chapter3/PNjunction.PNG}
+  \includegraphics[width=0.6\linewidth]{Graphics/Chapter3/PNjunction.PNG}
   \caption{Energy diagram of a PN junction at thermal equilibrium\cite{PN}}
   \label{fig:PNjunction}
 \end{figure}
