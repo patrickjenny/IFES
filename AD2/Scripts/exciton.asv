@@ -1,0 +1,18 @@
+clear all
+close all
+clc
+
+me = 0.21
+mh = 0.8
+
+hbar = 1.054571e-34
+
+mu = (me*mh)/(me+mh) * 9.109383e-31
+ee = 1.602172e-19
+
+eps0 = 8.854187e-12
+
+epsR
+eps = 8.9*eps0
+
+E = (mu*ee^4)/(2*hbar^2*eps^2)
